@@ -1,0 +1,44 @@
+Name: Varun Joshi
+CS 3345.004
+Net-ID: VXJ180018
+
+Project 5 - QuickSort
+Self Implementation of the QuickSort method
+
+The methods should work as described 
+
+The Project was done on the Eclipse IDE with Java 7
+Compiled on Ubuntu Bash System using command javac Main
+
+Report: 
+
+1. 
+Array Size = 500000
+FIRST_ELEMENT : PT0.24895483751 Seconds
+RANDOM_ELEMENT : PT0.23982221586 Seconds 
+MEDIAN_OF_THREE_RANDOM _ELEMENTS : PT0.3059604933 Seconds
+MEDIAN_OF_THREE_ELEMENTS : PT0.3489574839 Seconds
+
+2. 
+Array Size = 100000
+FIRST_ELEMENT : PT0.137483953932 Seconds
+RANDOM_ELEMENT : PT0.144893881234 Seconds 
+MEDIAN_OF_THREE_RANDOM _ELEMENTS : PT0.2389584904 Seconds
+MEDIAN_OF_THREE_ELEMENTS : PT0.14589458990 Seconds
+
+3.
+Array Size = 1000
+FIRST_ELEMENT  :  PT0.0072633S
+RANDOM_ELEMENT  :  PT0.0023133S
+MEDIAN_OF_THREE_RANDOM_ELEMENT  :  PT0.0012678S
+MEDIAN_OF_THREE_ELEMENTS  :  PT0.0004384S
+
+
+Based on the Tests conducted the pivot strategy that was generally the fastest was the one where the median of 
+three elements was chosen. I believe that to be so because since there were three elements and then the average
+was taken that the pivot index was mostly just towards the middle of the array so the likelihood of not having
+the worst case increases
+
+
+For almost sorted arrays the the three random elements median was the best as generally only a few elements
+were unsorted.
